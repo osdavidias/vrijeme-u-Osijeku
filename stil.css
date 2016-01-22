@@ -1,0 +1,36 @@
+h1 {
+	text-align: center;
+}
+
+th, td {
+	background-color: #A4EAF5;
+}
+
+.sl {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 140px;
+	width:  400px;
+}
+
+.tablica
+{
+display: block;
+margin-left: auto;
+margin-right: auto;    
+border-collapse: collapse;
+text-align: center;
+}
+
+.dugme{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: #A4EAF5;
+ color: red;
+ padding: 40px, 30px;
+ font-size: 18px;
+ font-weight: bold;
+
+}
