@@ -103,7 +103,7 @@ unset($pdo);
 // grafički prikaz temperature
 
 $pdo=new PDO ("mysql:host=$host; dbname=$baza", $user, $pass);
-$query='SELECT * FROM vrijeme_osijek ORDER BY vrijeme LIMIT 6';
+$query='SELECT * FROM (SELECT * FROM vrijeme_osijek ORDER BY vrijeme DESC LIMIT 6) tmp ORDER BY vrijeme ASC';
 $stmt=$pdo->query($query);
 $rezultat=$stmt->fetchAll(PDO::FETCH_OBJ);
 
